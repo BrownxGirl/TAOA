@@ -28,14 +28,30 @@
   <!-- <span class="home-nav" onclick="openNav()">&#9776;</span> -->
   <div class="logo"></div>
 
-  <nav>
-      <ul>
-          <a href="index.html">HOME</a>
-          <a  class="current"href="services.html">SERVICES</a>
-          <a href="contact.html">CONTACT</a>
-          <a href="contact.html"><b>Book a Free Discovery Session</b></a>
-      </ul>
-    </nav>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+    <button class="dropbtn current" onclick="myFunction()">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="hr.html">Human Resources</a>
+      <a href="coaching.html">Transformational Coaching</a>
+    </div>
+    </div> 
+    <a href="contact.html">Contact</a>
+    <a href="contact.html"><b>Book a Free Discovery Session</b></a>
+    
+  </div>
   </header>
 
     

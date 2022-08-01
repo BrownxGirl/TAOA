@@ -27,15 +27,31 @@
     </div> -->
     <!-- <span class="home-nav" onclick="openNav()">&#9776;</span> -->
     <div class="logo"></div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          
   
-    <nav>
-        <ul>
-            <a href="index.html">HOME</a>
-            <a  class="current"href="services.html">SERVICES</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="contact.html"><b>Book a Free Discovery Session</b></a>
-        </ul>
-      </nav>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+      <button class="dropbtn current" onclick="myFunction()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="hr.html">Human Resources</a>
+        <a href="coaching.html">Transformational Coaching</a>
+      </div>
+      </div> 
+      <a href="contact.html">Contact</a>
+      <a href="contact.html"><b>Book a Free Discovery Session</b></a>
+      
+    </div>
     </header>
   
 
@@ -46,7 +62,7 @@
      
         <p class="paragraph">
           Helping people and organisations find clarity and consciously create a space where
-          success is a consequence of effective leadership, systems and processes
+          success is a consequence of effective leadership, systems and processes.
         </p>
     
         <a href="https://calendly.com/coffeeconnect_art-of-allowing" target="_blank" rel="noopener noreferrer"><div class="button"><b>Let's meet. Book a free strategy session. </b></div></a>
@@ -103,49 +119,53 @@
 
         <div class="container">
           <h3>Human Resources Consulting</h3>
-          <p>Strategy, systems, policies
-            and procedures to create
-            a harmonious, productive
-            work environment.</p>
+          <p>Developing a healthy
+            organisation so your
+            business can grow to the
+            next level.</p>
 
-            <ul>
+            <ul>  
               <li>New HR systems</li>
               <li>HR compliance audits</li>
               <li>Policy and procedure development</li>
               <li>Employee wellbeing</li>
-              <li>Business coaching (for individuals andteams)</li>
+              <li>Business coaching (for individuals and teams)</li>
             </ul>
         </div>
 
         <div class="container">
-          <h3>Human Resources Consulting</h3>
-          <p>Strategy, systems, policies
-            and procedures to create
-            a harmonious, productive
-            work environment.</p>
+          <h3>LABOUR RELATIONS &amp; PEOPLE MANAGEMENT</h3>
+        <p>Developing and
+          managing your most
+          important asset - the
+          people.</p>
 
             <ul>
-              <li>New HR systems</li>
-              <li>HR compliance audits</li>
-              <li>Policy and procedure development</li>
-              <li>Employee wellbeing</li>
-              <li>Business coaching (for individuals andteams)</li>
+              <li>Mediation</li>
+              <li>Labour Relations</li>
+              <li>Union Negotiations</li>
+              <li>Retrenchments</li>
+              <li>Unfair labour disputes</li>
+              <li>Conflict resolution</li>
             </ul>
         </div>
 
         <div class="container">
-          <h3>Human Resources Consulting</h3>
+          <h3>ORGANISATIONAL DEVELOPMENT</h3>
           <p>Strategy, systems, policies
             and procedures to create
             a harmonious, productive
             work environment.</p>
 
             <ul>
-              <li>New HR systems</li>
-              <li>HR compliance audits</li>
-              <li>Policy and procedure development</li>
-              <li>Employee wellbeing</li>
-              <li>Business coaching (for individuals andteams)</li>
+
+              <li>Change facilitation</li>
+              <li>Diagnose &amp; deliver OD solutions</li>
+              <li>Alignment of climate and culture</li>
+              <li>Leadership development</li>
+              <li>BTeam alignment</li>
+              <li>Conscious leadership coaching</li>
+              <li>Strategy facilitation</li>
             </ul>
         </div>
 
@@ -193,12 +213,29 @@
 
   <script>
        
-    function openNav() {
- document.getElementById("mySidenav").style.width = "70%";
+   
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var myDropdown = document.getElementById("myDropdown");
+if (myDropdown.classList.contains('show')) {
+  myDropdown.classList.remove('show');
+}
+}
+}
+   
+function openNav() {
+document.getElementById("mySidenav").style.width = "70%";
 }
 
 function closeNav() {
- document.getElementById("mySidenav").style.width = "0";
+document.getElementById("mySidenav").style.width = "0";
 }
          </script>
 

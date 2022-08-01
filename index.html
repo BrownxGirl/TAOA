@@ -14,7 +14,6 @@
 <body>
   <section class="home">
     <header class="homepage">
-gi
 
       <!-- <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
@@ -25,21 +24,47 @@ gi
           <a href="contact.html"><b>Book a Free Discovery Session</b></a>
     </div> -->
     <!-- <span class="home-nav" onclick="openNav()">&#9776;</span> -->
-    <nav>
+    <!-- <nav>
         <ul>
             <a class="current" href="index.html">HOME</a>
             <a href="services.html">SERVICES</a>
             <a href="contact.html">CONTACT</a>
             <a href="contact.html"><b>Book a Free Discovery Session</b></a>
         </ul>
-      </nav>
+      </nav> -->
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+
+<div class="navbar">
+        <a class="current" href="index.html">Home</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Services
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="hr.html">Human Resources</a>
+          <a href="coaching.html">Transformational Coaching</a>
+        </div>
+        </div> 
+        <a href="contact.html">Contact</a>
+        <a href="contact.html"><b>Book a Free Discovery Session</b></a>
+        
+      </div>
+
     </header>
    
     <div id="landing">
       <div class="inneimr-landing">
      <div class="landing">
         <div class="img"></div>
-        <p>We help you optimise your business for revenue and profits</p>
+        <p>Helping people and organisations find clarity and consciously create success</p>
      <a href="services.html"><div class="button">Explore</div></a>  
     </div>
 
@@ -54,21 +79,30 @@ gi
     
   
 </section>
-  <footer>
-    <div>
-   The Art of Allowing &copy; 2022 | <a href="index.html"> HOME</a> | <a href="services.html" target="_blank" rel="noopener noreferrer">SERVICES</a>| <a href="contact.html" target="_blank" rel="noopener noreferrer">CONTACT</a>  | <a href="policy.html" target="_blank" rel="noopener noreferrer">Privacy policy  Ts & Cs</a> | <a href="https://www.linkedin.com/company/the-art-of-allowing-pty-ltd/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a> <ul>
-    </div>
-
-
-  </footer>
   <script>
+
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
        
-    function openNav() {
- document.getElementById("mySidenav").style.width = "70%";
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
 }
 
 function closeNav() {
- document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0";
 }
          </script>
 
