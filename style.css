@@ -15,6 +15,13 @@ body {
  
 }
 
+
+
+
+
+
+
+
 h1{
     text-transform: uppercase;
 }
@@ -358,13 +365,12 @@ align-self: center;
 border: #924954 1px solid;
 color: #924954;
 width: 400px;
-margin: auto;
+margin: 1rem auto;
 }
 #HR a :hover{
   background-color: #924954;
     color: #ffffff;
     width: 400px;
-    margin: auto;
     }
 
 
@@ -378,10 +384,12 @@ margin: auto;
 .divide{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: auto;
+    align-items: flex-start;
+    margin: 3rem;
     color: #924954;
     justify-content: space-between;
+    width: 90%;
+
 }
 
 .image p{
@@ -397,10 +405,19 @@ margin: auto;
     border-radius: 10px;
    
 }
+
+.divide .image{
+    width: 800px;
+  
+}
 .text{
     width: 100%;
     text-align:left ;
+    padding: 0px;
+}
 
+.text p{
+    margin: 0;
 }
 
 .text ul li{
@@ -411,6 +428,7 @@ margin: auto;
 text-align: center;
 font-weight: 600;
 }
+
 
 .quote{
     font-weight: 100;
@@ -433,7 +451,7 @@ font-weight: 600;
 
 .container{
     border-radius: 10px;
-    width: 30%;
+    width: 32%;
     padding-bottom: 20px;
     background-color: #ffffff;
 }
@@ -444,20 +462,28 @@ font-weight: 600;
     padding: 20px;  
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
 
 }
 .container p{
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin: auto;
-    padding: 10px;
+    padding: 15px;
 }
 .hr .part3 ul{
     color: #924954;
-    text-align:left ;
-    width: 50%;
+    text-align:center ;
+    width: 90%;
     margin: auto;
-   
+   padding: 0;
+   font-size: 15px;
+    
+}
+
+.hr .part3 ul li{
+ list-style: none;
     
 }
 
@@ -1002,7 +1028,6 @@ footer{
     text-align: center;
     background-color:#F591A0;
     color: #fafafa;
-    bottom: 0;
     font-size: small;
     width:100%;
 }
@@ -1013,7 +1038,7 @@ footer a{
 }
 
 footer div{
-    padding: 10px;
+    padding: 1px;
 }
 
 footer {
@@ -1030,6 +1055,32 @@ footer {
     font-weight: 500;
  }
 
+ #h2{
+    margin:0;
+    padding: 8rem 0 3.5rem 0;
+    color: #924954;
+    font-weight: 500;
+ }
+ h2{
+    margin:0;
+    padding: 8rem 0 3.5rem 0;
+    color: #924954;
+    font-weight: 500;
+ }
+ h2{
+    margin:0;
+    padding: 8rem 0 3.5rem 0;
+    color: #924954;
+    font-weight: 500;
+ }
+
+
+ #HR .part2 h2{
+    margin-top:3.5rem;
+    padding: 10rem 0 0.5rem 0;
+    color: #924954;
+    font-weight: 500;
+ }
 
 
 
