@@ -15,13 +15,6 @@ body {
  
 }
 
-
-
-
-
-
-
-
 h1{
     text-transform: uppercase;
 }
@@ -73,10 +66,6 @@ img{
   margin-top: 1.5rem;
 
 }
-
-
-
-
 
 /* header li{
     display: inline-block;
@@ -150,7 +139,7 @@ header a b{
   }
 
   .navbar a:hover {
-    color: #b65765;;
+    color: #000000;;
    
   }
 
@@ -173,7 +162,7 @@ header a b{
   }
 
   .dropdown .dropbtn:hover {
-    color: #b65765;;
+    color: #000000;;
 
   }
   
@@ -607,8 +596,9 @@ padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     padding-bottom: 5rem;
-
 }
+
+
 #coaching .divide{
  display: flex;
  flex-direction: row;
@@ -674,11 +664,23 @@ text-align: left;
     margin: auto;
 
 }
+.pinkbg ul{
+    padding-left: 70px;
+}
+
+
+
 
 .button-pinkbg:hover{
     background-color: #924954;
     color: #ffffff;
     margin: auto;
+}
+
+#coaching .divide2 .quote{
+    text-align: left;
+    width: 52%;
+
 }
 /* #coaching .divide p{
 width: 80%;
@@ -713,7 +715,7 @@ width: 80%;
 .part4 .button{
     border: #924954 1px solid;
     color: #924954;
-    width: 50%;
+    width: 20%;
    text-align: center;
    margin: auto;
 }

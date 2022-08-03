@@ -40,7 +40,7 @@
   <div class="navbar">
     <a href="index.html">Home</a>
     <div class="dropdown">
-    <button class="dropbtn current" onclick="myFunction()">Services
+    <button class="dropbtn" onclick="myFunction()">Services
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content" id="myDropdown">
@@ -48,8 +48,8 @@
       <a href="coaching.html">Transformational Coaching</a>
     </div>
     </div> 
-    <a href="contact.html">Contact</a>
-    <a href="contact.html"><b>Book a Free Discovery Session</b></a>
+    <a class="current" href="contact.html">Contact</a>
+    <a  href="https://calendly.com/coffeeconnect_art-of-allowing" target="_blank"><b>Book a Free Discovery Session</b></a>
     
   </div>
   </header>
@@ -120,12 +120,28 @@
     </footer>
   <script>
        
-    function openNav() {
- document.getElementById("mySidenav").style.width = "70%";
+   /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var myDropdown = document.getElementById("myDropdown");
+if (myDropdown.classList.contains('show')) {
+  myDropdown.classList.remove('show');
+}
+}
+}
+   
+function openNav() {
+document.getElementById("mySidenav").style.width = "70%";
 }
 
 function closeNav() {
- document.getElementById("mySidenav").style.width = "0";
+document.getElementById("mySidenav").style.width = "0";
 }
          </script>
 
