@@ -273,13 +273,17 @@ color: rgba(0, 0, 0, 0.849);
 
 }
 
-.box-overlay{  
-top:0;
+.box-overlay{ 
+display:flex ;
+align-items: center;
+
+/* top:0;
 left: 0;
 margin: auto;
-margin-top: 1.5rem;
-width: 80%;
-height: 80%;
+margin-top: 1.5rem; */
+width: 100%;
+height: 100%;
+justify-content: center;
 background: rgba(255, 255, 255, 0.76);
 text-align: center;
 border-radius: 10px;
@@ -287,15 +291,21 @@ cursor: pointer;
 }
 
 .box-overlay:hover{
-    background: rgba(255, 255, 255, 0.87);
-    
+    background: rgba(20, 19, 19, 0.767);
+    color: white;
 }
+.box-overlay h3:hover{
+    color: white;
+    padding:px ;
+
+}
+
+
 a{
     text-decoration: none;
 }
 h3{
     margin: 0;
-    padding-top: 5.5rem;
     color: #924954;
 }
 
@@ -461,6 +471,11 @@ font-weight: 600;
     text-transform: uppercase;
 
 }
+
+.part2 video{
+    width: 450px;
+    height: auto;
+}
 .container p{
     width: 90%;
     text-align: center;
@@ -496,6 +511,9 @@ padding: 30px;
     margin: auto;
 }
 
+
+  
+
 .part4 ul{
   padding-bottom: 20px;
   color: #924954;
@@ -514,6 +532,33 @@ h4{
 }
 /* 
 coaching */
+
+
+
+h2{
+    margin:0;
+    padding: 8rem 0 3.5rem 0;
+    color: #924954;
+    font-weight: 500;
+ }
+
+
+ h2{
+    margin:0;
+    padding: 8rem 0 3.5rem 0;
+    color: #924954;
+    font-weight: 500;
+ }
+
+
+ .part2 h2{
+    margin-top:3.5rem;
+    padding: 10rem 0 0.5rem 0;
+    color: #924954;
+    font-weight: 500;
+ }
+
+
 
 #coaching{
     display:flex ;
@@ -773,6 +818,65 @@ span{
     display: none;
 }
 
+.mySlides {display: none;}
+/* img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  /* animation-name: fade; */
+  animation-duration: 15.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+.testimonals h2{
+    margin: 0;
+    padding:2rem 0;
+}
+
+.testimonals{
+    padding-bottom: 100px;
+}
+
+.testimonals .dot {
+    height: 5;
+    width: 1px;
+  }
 
 /* 
 Mobile */
@@ -812,6 +916,10 @@ Mobile */
     margin-left: 50px;
   }
 
+  .part4 ul{
+    width: 90%;
+    margin: auto;
+}
 
 
   @media screen and (max-height: 450px) {
@@ -822,12 +930,36 @@ Mobile */
 
 @media (max-width: 440px) { 
 
+    span{
+        display: block;
+        padding-right: 20px;
+        color: rgb(167, 89, 102);
+        font-size:40px;
+        cursor:pointer;
+        visibility: visible;
+        margin-top: -15px;
+        
+        }
+
+.part3 .container{
+    width: 90%;
+    margin:auto;
+    margin-bottom: 2rem;
+
+}
+
+
     header{
         margin-top: 0;
+        flex-direction: row-reverse;
     }
     
     .navbar{
         display: none;
+    }
+
+    .bolder{
+        font-size: large;
     }
 
     #landing p{
@@ -881,6 +1013,18 @@ Mobile */
     font-size: small;
 }
 
+#HR .part2 h2{
+    margin-top:5rem;
+    padding: 0;
+    color: #924954;
+    font-weight: 500;
+ }
+
+ .divide .image{
+    width: 100%;
+  
+}
+
 .divide,.divide2,.part3{
     flex-direction: column;
 }
@@ -888,7 +1032,6 @@ Mobile */
     font-size: small;
     width: 80%;
     margin: auto;
-    text-align: center;
     padding-top: 20px;
 }
 .divide span{
@@ -898,17 +1041,38 @@ Mobile */
 
 .divide i{
     font-size: 9px;
-}
+}   
 
-.divide ul{
-    font-size: x-small;
+#coaching .divide2 .quote {
+    text-align: left;
     width: 80%;
 }
 
-
-.container,.part4 ul{
-    width: 90%;
+#coaching .pinkbg img {
+    width: 300px;
     margin: auto;
+}
+.part4 .button {
+  
+    width: 80%;
+   
+}
+
+.button-pinkbg {
+    width: 80%;
+   
+}
+#coaching .button {
+   
+    width: 90%;
+    
+}
+#coaching .text ul {
+    margin: 0 15px;
+    padding-bottom: 2rem;
+    font-size: x-small;
+    width: 80%;
+}
 }
 
 .container{
@@ -931,7 +1095,7 @@ Mobile */
 }
 
 #coaching img{ 
-    width: 90%;
+    
  
 }
 
@@ -941,61 +1105,14 @@ Mobile */
 }
 
 
-    /* work */
-    body {font-size:1rem;} 
-    #portfolio{
-        grid-template-columns: auto;
-        gap: 0px;
-        margin-top: 40px;
-    }
-
-    header{
-        flex-direction: row-reverse;
-        padding-top: 25px;
-    }
-
-    span{
-        display: block;
-        padding-right: 20px;
-        color: rgb(167, 89, 102);
-        font-size:40px;
-        cursor:pointer;
-        visibility: visible;
-        margin-top: -15px;
-        
-        }
-
-        header .current{
-            border-bottom: rgb(255, 255, 255) solid 0px;
-            color: bisque;
-            padding: 0;
-        }
-
-
-    .about{
-   width: 90%;
-   margin-top: 6.5rem;
-   }
+ .divide{
+    width: fit-content;
+ }
     
-   /* about */
-
-   #about{
-    width: 90%;
-    
-    margin: auto;
-    height: auto;
-}
-.profile-image{
-    margin: auto;
-    margin-top: 5rem;
-    width: 85%;
-    height: 30%;
-}
-.profile-text{
+ #coaching .divide .image {
     width: 100%;
-    margin-top: 1.5rem;
-  
 }
+
 
 #about ul{
 padding: 0;
@@ -1038,7 +1155,7 @@ padding: 0;
 
 
 
-}
+
 @media (min-width: 640px) { body {font-size:1rem;} }
 @media (min-width:960px) { body {font-size:1.2rem;} }
 @media (min-width:1100px) { body {font-size:1rem;} }
@@ -1074,41 +1191,6 @@ footer {
  
  
  }
-
- h2{
-    margin:0;
-    padding: 8rem 0 3.5rem 0;
-    color: #924954;
-    font-weight: 500;
- }
-
- #h2{
-    margin:0;
-    padding: 8rem 0 3.5rem 0;
-    color: #924954;
-    font-weight: 500;
- }
- h2{
-    margin:0;
-    padding: 8rem 0 3.5rem 0;
-    color: #924954;
-    font-weight: 500;
- }
- h2{
-    margin:0;
-    padding: 8rem 0 3.5rem 0;
-    color: #924954;
-    font-weight: 500;
- }
-
-
- #HR .part2 h2{
-    margin-top:3.5rem;
-    padding: 10rem 0 0.5rem 0;
-    color: #924954;
-    font-weight: 500;
- }
-
 
 
 

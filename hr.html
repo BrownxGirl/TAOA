@@ -15,17 +15,6 @@
   <section class="hr">
 
     <header>
-
-
-      <!-- <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
-        
-          <a class="current" href="index.html">HOME</a>
-          <a href="about.html">SERVICES</a>
-          <a href="contact.html">CONTACT</a>
-          <a href="contact.html"><b>Book a Free Discovery Session</b></a>
-    </div> -->
-    <!-- <span class="home-nav" onclick="openNav()">&#9776;</span> -->
     <div class="logo"></div>
 
     <div id="mySidenav" class="sidenav">
@@ -49,7 +38,7 @@
       </div>
       </div> 
       <a href="contact.html">Contact</a>
-      <a href="contact.html"><b>Book a Free Discovery Session</b></a>
+      <a  href="https://calendly.com/coffeeconnect_art-of-allowing" target="_blank"><b>Book a Free Discovery Session</b></a>
       
     </div>
     </header>
@@ -65,7 +54,7 @@
           success is a consequence of effective leadership, systems and processes.
         </p>
     
-        <a href="https://calendly.com/coffeeconnect_art-of-allowing" target="_blank" rel="noopener noreferrer"><div class="button"><b>Let's meet. Book a free strategy session. </b></div></a>
+        <a href="https://calendly.com/coffeeconnect_art-of-allowing" target="_blank" rel="noopener noreferrer"><div class="button"><b>Let's meet! Book a free strategy session</b></div></a>
      
       </div>
 
@@ -74,6 +63,7 @@
 
         <div class="divide">
           <div class="image">
+            
             <img src="images/taseneem1.jpeg" alt="Tasneem">
             <p class="quote">
               <i class="fas fa-quote-left"></i>
@@ -107,7 +97,7 @@
                   <li>Certified Integral Coach - UCT Graduate School of Business</li>
                   <li>Associate Coaching Certification - UCT Graduate School of Business</li>
                </ul>
-               <a href="https://calendly.com/coffeeconnect_art-of-allowing" target="_blank" rel="noopener noreferrer"><div class="button"><b>Get to know Tasneem better</b></div></a>
+               <a href="https://www.linkedin.com/in/tasneem-rajie/" target="_blank" rel="noopener noreferrer"><div class="button"><b>Get to know Tasneem better</b></div></a>
               </div>
         </div>
 
@@ -182,7 +172,7 @@
           <li>Together we create an environment where people and your business thrive.</li>
         </ul>
 
-        <a href="https://calendly.com/coffeeconnect_art-of-allowing" target="_blank" rel="noopener noreferrer"><div class="button"><b>Let's meet. Book a free strategy session.</b></div></a>
+        <a href="https://calendly.com/coffeeconnect_art-of-allowing" target="_blank" rel="noopener noreferrer"><div class="button"><b>Let's meet! Book a free strategy session</b></div></a>
 
 
 
@@ -193,8 +183,37 @@
 
 
 <div class="testimonals">
+
+  <h2>Testimonals </h2>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="images/1.jpg" style="width:50%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="images/2.jpg" style="width:50%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="images/1.jpg" style="width:50%">
+      <div class="text"></div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div> 
   
-</div>
+  
+  
+  </div>
 
 
   
@@ -215,7 +234,32 @@
 </section>
 
   <script>
-       
+    
+
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+
+
    
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
