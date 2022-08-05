@@ -385,7 +385,7 @@ margin: 1rem auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 3rem;
+    margin: 3rem 4rem;
     color: #924954;
     justify-content: space-between;
     width: 90%;
@@ -522,14 +522,19 @@ padding: 30px;
   margin: auto
 }
 
-
-
-
 h4{
     color: #924954;
     margin-top: 0;
-
 }
+/* 
+testimonals */
+
+.mySlides img{
+    width: 50%;
+}
+
+
+
 /* 
 coaching */
 
@@ -600,7 +605,7 @@ padding-bottom: 3rem;
 
 #coaching .part2 h2{
     margin-top:3.5rem;
-    padding: 10rem 0 0.5rem 0;
+    padding: 7rem 0 0.5rem 0;
     color: #924954;
     font-weight: 500;
  }
@@ -905,7 +910,7 @@ Mobile */
   }
   
   .sidenav a:hover {
-    color: #000000;
+    color: #F591A0;
   }
   
   .sidenav .closebtn {
@@ -916,10 +921,6 @@ Mobile */
     margin-left: 50px;
   }
 
-  .part4 ul{
-    width: 90%;
-    margin: auto;
-}
 
 
   @media screen and (max-height: 450px) {
@@ -941,6 +942,16 @@ Mobile */
         
         }
 
+       #HR .part2 .divide{
+            width: fit-content;
+         }
+
+
+        .part4 ul{
+            width: 90%;
+            margin: auto;
+        }
+        
 .part3 .container{
     width: 90%;
     margin:auto;
@@ -948,6 +959,10 @@ Mobile */
 
 }
 
+#coaching .divide2, #coaching .divide{
+    flex-direction: column;
+    padding-top: 30px;
+}
 
     header{
         margin-top: 0;
@@ -958,8 +973,9 @@ Mobile */
         display: none;
     }
 
-    .bolder{
-        font-size: large;
+    .bolder {
+        font-size: 19px;
+        font-weight: 700;
     }
 
     #landing p{
@@ -974,18 +990,19 @@ Mobile */
         display: none;
     }
     
-    #box{
+    #box {
         flex-direction: column;
+        height: 100vh;
+        justify-content: start;
     }
-
     .box-item1{
         width: 85%;
-       height: 10rem;
+       height: 20rem;
     }
 
     .box-item2{
         width: 85%;
-        height: 10rem;
+        height: 20rem;
     }
 
     .service-page h1{
@@ -998,19 +1015,32 @@ Mobile */
 
     .hr h1{
         margin-top: 2rem;
+        font-size: 25px;
     }
-
-    .hr h2{
-        padding-top: 3rem;
+    #coaching p i{
+        font-size: 16px;
+    } 
+   .part1 .paragraph{
+        font-size: 16px;
+        padding: 8px;
+    }
+    #coaching .part2 h2 {
+        margin-top: 0rem; 
+         padding: 80px 0 0;
+        color: #924954;
+        font-weight: 500;
     }
 
     .part1{
-        width: 90%;
+        width: fit-content;
         font-size: smaller;
     }
 #HR .button{
     width: 80%;
     font-size: small;
+}
+#HR a :hover {
+    width: 80%;
 }
 
 #HR .part2 h2{
@@ -1022,30 +1052,49 @@ Mobile */
 
  .divide .image{
     width: 100%;
-  
+}
+
+
+.mySlides img{
+    width: 100%;
 }
 
 .divide,.divide2,.part3{
     flex-direction: column;
 }
 .divide p{
-    font-size: small;
-    width: 80%;
+    font-size: 16px;
     margin: auto;
     padding-top: 20px;
-}
-.divide span{
-    font-size: 9px;
-    padding-top: 20px;
+    padding-right: 5px;
+    /* padding-left: 20px; */
 }
 
-.divide i{
-    font-size: 9px;
-}   
+
+
+#coaching .part2 p {
+    text-align: left;
+    padding: 20px 20px 0;
+}
+.divide .quote{
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    text-align: left;
+}
+.divide span{
+    font-size: 11px;
+    padding-top: 20px;
+}
+  #HR h2{
+    padding: 40px 0 20px 0;
+  }
 
 #coaching .divide2 .quote {
     text-align: left;
     width: 80%;
+    padding: 15px 0;
 }
 
 #coaching .pinkbg img {
@@ -1062,15 +1111,19 @@ Mobile */
     width: 80%;
    
 }
-#coaching .button {
-   
-    width: 90%;
-    
+#coaching .button {  
+    width: 80%;    
 }
+
+#coaching .button:hover {  
+    width: 80%;    
+}
+
 #coaching .text ul {
-    margin: 0 15px;
+    margin: auto;
     padding-bottom: 2rem;
-    font-size: x-small;
+    padding-top: 10px;
+    font-size: 16px;
     width: 80%;
 }
 }
@@ -1079,25 +1132,32 @@ Mobile */
     margin-bottom: 2rem;
 }
 
+#coaching .pinkbg h2 {
+    padding-top: 40px;
+    color: white;
+    padding-bottom: 0;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+}
+
 .hr .part3 ul{
     width: 80%;
 }
 
-#coaching .divide2, #coaching .divide{
-    flex-direction: column;
-}
+
 
 #coaching .pinkbg .text p{
     text-align: center;
     margin: auto;
-    width: 80%;
+    width: 85%;
     padding: 10px 0;
 }
 
-#coaching img{ 
+/* #coaching img{ 
     
  
-}
+} */
 
 .set1{
     flex-direction: column;
@@ -1105,9 +1165,7 @@ Mobile */
 }
 
 
- .divide{
-    width: fit-content;
- }
+ 
     
  #coaching .divide .image {
     width: 100%;
@@ -1178,7 +1236,7 @@ footer{
 
 footer a{
     text-decoration: none;
-    color: #924954;
+    color: #ffffff;
 }
 
 footer div{
