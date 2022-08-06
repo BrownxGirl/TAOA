@@ -358,8 +358,8 @@ align-self: center;
 
 .paragraph{
     color: #924954;
-    padding-bottom: 0px;
-    margin: 10px;
+    padding-bottom: 10px;
+    margin: auto;
 }
 
 #HR .button{
@@ -611,16 +611,24 @@ padding-bottom: 3rem;
     font-weight: 500;
  }
 
-
-
 #coaching p{
     text-align: center;
 }
 
-#coaching.text{
+/* #coaching.text{
     width: 80%;
     padding-left: 80px;
 
+} */
+
+.testimonal-img{
+    background-image: url(images/3.jpg);
+    width: 30%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin: auto;
 }
 
 #coaching .button{
@@ -689,6 +697,7 @@ padding-bottom: 3rem;
 #coaching .pinkbg .text p{
 margin-left: 3.5rem;
 text-align: left;
+width: 100%;
        }
     .pinkbg ul{
         color: white;
@@ -731,6 +740,7 @@ text-align: left;
 #coaching .divide2 .quote{
     text-align: left;
     width: 52%;
+    color: white;
 
 }
 /* #coaching .divide p{
@@ -873,6 +883,7 @@ span{
 .testimonals h2{
     margin: 0;
     padding:2rem 0;
+    text-align: center;
 }
 
 .testimonals{
@@ -932,6 +943,17 @@ Mobile */
 
 @media (max-width: 440px) { 
 
+
+.testimonal-img{
+    background-image: url(images/3.jpg);
+    width: 90%;
+    height:350px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin: auto;
+}
+
     span{
         display: block;
         padding-right: 20px;
@@ -964,6 +986,14 @@ Mobile */
     flex-direction: column;
     padding-top: 30px;
 }
+
+#coaching .pinkbg .text p{
+    margin-left: 30px;
+      width: 80%;
+      padding: 10px 0px 0px 0px;
+      margin-right: 0;
+  
+  }
 
     header{
         margin-top: 0;
@@ -1021,10 +1051,19 @@ Mobile */
     #coaching p i{
         font-size: 16px;
     } 
-   .part1 .paragraph{
+   #coaching .part1 .paragraph{
         font-size: 16px;
         padding: 8px;
-    }
+        width: 80%;
+        text-align: left;
+        }
+
+        .text {
+            width: 90%;
+            text-align: left;
+            padding: 0px;
+            margin: auto;
+        }
     #coaching .part2 h2 {
         margin-top: 0rem; 
          padding: 80px 0 0;
@@ -1075,11 +1114,11 @@ Mobile */
 
 #coaching .part2 p {
     text-align: left;
-    padding: 20px 20px 0;
+    /* padding: 20px 20px 0; */
 }
 .divide .quote{
     font-size: 16px;
-    width: 100%;
+    width: 80%;
     margin: auto;
     padding-top: 20px;
     text-align: left;
@@ -1100,7 +1139,7 @@ Mobile */
 
 #coaching .pinkbg img {
     width: 300px;
-    margin: auto;
+    margin-right: 30px;
     padding-left: 20px;
 }
 .part4 .button {
@@ -1113,6 +1152,12 @@ Mobile */
     width: 80%;
     margin: auto;
 }
+
+#coaching .pinkbg .image {
+ background-color: #F591A0;
+}
+
+
 
 .button-pinkbg {
     width: 80%;
@@ -1127,11 +1172,15 @@ Mobile */
 }
 
 #coaching .text ul {
-    margin: auto;
+    margin-right: 30px;
     padding-bottom: 2rem;
     padding-top: 10px;
     font-size: 16px;
     width: 80%;
+}
+.pinkbg .text ul{
+    padding-left: 50px;
+
 }
 }
 
@@ -1153,12 +1202,6 @@ Mobile */
 }
 
 
-
-#coaching .pinkbg .text p{
-    margin: auto;
-    width: 85%;
-    padding: 10px 0px 0px 20px
-}
 
 
 /* #coaching img{ 
