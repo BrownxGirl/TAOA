@@ -789,7 +789,9 @@ width: 80%;
 
 
 /* contact */
-
+.contact{
+    height: 100vh;
+}
 .contact-icon{
     display: flex;
     flex-direction: column;
@@ -967,6 +969,7 @@ Mobile */
 
        #HR .part2 .divide{
             width: fit-content;
+            margin: auto;
          }
 
 
@@ -985,6 +988,7 @@ Mobile */
 #coaching .divide2, #coaching .divide{
     flex-direction: column;
     padding-top: 30px;
+    padding-bottom: 0;
 }
 
 #coaching .pinkbg .text p{
@@ -1035,6 +1039,11 @@ Mobile */
         width: 85%;
         height: 20rem;
     }
+    .set1{
+        flex-direction: column;
+             
+    }
+    
 
     .service-page h1{
         margin-top: 0;
@@ -1084,8 +1093,8 @@ Mobile */
 }
 
 #HR .part2 h2{
-    margin-top:5rem;
-    padding: 0;
+    margin-top:2rem;
+    padding-bottom: 20px;
     color: #924954;
     font-weight: 500;
  }
@@ -1209,10 +1218,6 @@ Mobile */
  
 } */
 
-.set1{
-    flex-direction: column;
-         
-}
 
 
  
