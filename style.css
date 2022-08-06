@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
+  overflow-x: hidden;
  
 }
 
@@ -1100,11 +1101,17 @@ Mobile */
 #coaching .pinkbg img {
     width: 300px;
     margin: auto;
+    padding-left: 20px;
 }
 .part4 .button {
   
     width: 80%;
-   
+}
+
+#coaching .pinkbg .center {
+    text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 .button-pinkbg {
@@ -1148,11 +1155,11 @@ Mobile */
 
 
 #coaching .pinkbg .text p{
-    text-align: center;
     margin: auto;
     width: 85%;
-    padding: 10px 0;
+    padding: 10px 0px 0px 20px
 }
+
 
 /* #coaching img{ 
     
