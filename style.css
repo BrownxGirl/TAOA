@@ -394,7 +394,7 @@ margin: 1rem auto;
 }
 
 .image p{
-    width: 60%;
+    width: 50%;
     margin: auto;
     font-size:small;
 
@@ -948,12 +948,12 @@ Mobile */
 
 .testimonal-img{
     background-image: url(images/3.jpg);
-    width: 90%;
+    width: 95%;
     height:350px;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover; 
-    margin: auto;
+    margin-right: 20px;
 }
 
     span{
