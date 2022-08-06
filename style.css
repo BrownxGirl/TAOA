@@ -510,6 +510,7 @@ padding: 30px;
 .part4 ul li{
     width: 80%;
     margin: auto;
+    padding-top: 12px;
 }
 
 
@@ -623,8 +624,8 @@ padding-bottom: 3rem;
 
 .testimonal-img{
     background-image: url(images/3.jpg);
-    width: 35%;
-    height: 440px;
+    width: 30%;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -698,6 +699,7 @@ padding-bottom: 3rem;
 margin-left: 3.5rem;
 text-align: left;
 width: 100%;
+padding-top: 10px;
        }
     .pinkbg ul{
         color: white;
@@ -945,16 +947,17 @@ Mobile */
 
 @media (max-width: 440px) { 
 
+    
 
-.testimonal-img{
-    background-image: url(images/3.jpg);
-    width: 95%;
-    height:350px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    margin-right: 20px;
-}
+ .testimonal-img{
+        background-image: url(images/3.jpg);
+        width: 95%;
+        height:350px;
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        margin-right: 20px;
+    }
 
     span{
         display: block;
@@ -976,7 +979,7 @@ Mobile */
         .part4 ul{
             width: 90%;
             margin: auto;
-        }
+       }
         
 .part3 .container{
     width: 90%;
@@ -1006,7 +1009,8 @@ Mobile */
     
     .navbar{
         display: none;
-    }
+  
+   }
 
     .bolder {
         font-size: 19px;
@@ -1203,7 +1207,6 @@ Mobile */
     padding-bottom: 0;
     width: 80%;
     margin: auto;
-    font-size: 20px;
 }
 
 .hr .part3 ul{
