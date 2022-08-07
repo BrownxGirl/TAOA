@@ -163,8 +163,7 @@ header a b{
   }
 
   .dropdown .dropbtn:hover {
-    color: #000000;;
-
+    color: #000000;
   }
   
   
@@ -255,7 +254,7 @@ color: rgba(0, 0, 0, 0.849);
     background-color: pink;
     width: 40%;
    margin: 2rem;
-   background-image: url(images/HRimage.jpg);
+   background-image: url(images/HR.jpg);
    background-position: center;
    background-repeat: no-repeat; 
    background-size: cover; 
@@ -266,7 +265,7 @@ color: rgba(0, 0, 0, 0.849);
     background-color: pink;
     width: 40%;
    margin: 2rem;
-   background-image: url(images/coaching.jpeg);
+   background-image: url(images/c.jpg);
    background-position: center;
    background-repeat: no-repeat; 
    background-size: cover; 
